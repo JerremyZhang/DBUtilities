@@ -46,6 +46,16 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZSQL.Common\ZSQL.Common.csproj">
+      <Project>{9DDB1B57-88F8-4533-BE63-7BB5571C52D1}</Project>
+      <Name>ZSQL.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZSQL.DBAccess\ZSQL.DBAccess.csproj">
+      <Project>{3D28E44B-58CD-4DD9-AAD6-253C6E99808F}</Project>
+      <Name>ZSQL.DBAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

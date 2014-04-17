@@ -40,7 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB.cs" />
+    <Compile Include="DBColumnAttribute.cs" />
+    <Compile Include="DBExecutionResult.cs" />
+    <Compile Include="IgnoreAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZSQL.Common\ZSQL.Common.csproj">
+      <Project>{9DDB1B57-88F8-4533-BE63-7BB5571C52D1}</Project>
+      <Name>ZSQL.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
